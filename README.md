@@ -1,13 +1,10 @@
-# Homework 4 Results
-I apologize for the late submittal of this assignment, I had a few issues locating lost parts and troubleshooting minor software issues. I also overestimated the amount of trial runs the Crazyflie could fly per charge and its charging time.
-
 ## Setup
 
 A small mass consisting of double sided electrical tape with a micro USB receiver hass been added to the Crazyflie as seen below. 
 
 ![cf](https://github.com/purdue-aae490-iar/hw4-pid-tuning-Hicham-Belhseine/blob/master/media/cf_mass.jpg)
 
-There is a deficiency with the test setup as the propellers are scratched and slightly damaged and a motor shaft is loose causing oscillations during hover.
+There is a deficiency with the test setup as the propellers are scratched and slightly damaged. A motor shaft is also loose causing oscillations during hover.
 
 The software used in the assignment allows a user to provide an altitude step input to the Crazyflie, characterize the response from the unit step input (e.g. find overshoot or rise time), change the Crazyflie's PID gains, then immediately test a new response with the new PID gains. The terminal interface for the assignment is seen below
 
@@ -45,20 +42,3 @@ The test trials with an attached mass can be found in the table below.
 A trial meeting the requirements of a rise time of 1s, a percent overshoot of 10%, and a settling time of 3s was achieved after 10 iterations. The gains from this trial are Kp=3.5, Ki=.1, Kd=.6, achieving a percent overshoot of 3.43%, a rise time of 1.0s, and finally a settling time of 1.10s. The response of the selected trial can be seen below.
 
 ![Trial Image](https://github.com/purdue-aae490-iar/hw4-pid-tuning-Hicham-Belhseine/blob/master/trials/11/alt_ctl_step_20200328-001541.png)
-
-# hw4_pid_tuning
-
-You will be manually tuning the altitude controller for the crazyflie.
-
-## Instructions
-
-* Read the crazyflie documentation to find what gains to change to modify the altitude PID gains and how to obtain the altitude of the vehicle and motor commands for logging.
-* Plot the altitude and sum of motor inputs for your crazyflie taking off with original mass.
-* Plot the altitude and sum of motor inputs for your crazyflie taking off with a penny, or similar small weight taped to the bottom of the vehicle.
-* Tune your altitude PID controller and report the original and updated gains for the added weight.
-
-## Deliverables
-
-* Plot for altitude and sum of motor inputs response for original and new mass during takeoff.
-* Written comparison of the original and new gains and an explanation of your tuning process. How is the trim thrust of the crazyflie computed for hover? Investigate the c code of the PID controller and explain the implementation of the altitude PID controller. Is there a wind-up guard? Is there saturation? Is there a trim mass of the vehicle?
-* Video of your original takeoff with the weight, and your tuned take-off with the weight.
