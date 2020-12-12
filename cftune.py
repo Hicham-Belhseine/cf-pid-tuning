@@ -91,7 +91,7 @@ class PositionTuner:
         # finding percent overshoot
         if end > start:
             overshoot = np.max(response)
-        elif end > start:
+        elif start > end:
             overshoot = np.min(response)
         else:
             overshoot = 0
