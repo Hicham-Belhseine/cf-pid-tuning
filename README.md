@@ -1,6 +1,6 @@
 ## Setup
 
-A small mass consisting of double sided electrical tape with a micro USB receiver hass been added to the Crazyflie as seen below. 
+A small mass consisting of double sided electrical tape with a micro USB receiver has been added to the Crazyflie as seen below. 
 
 ![cf](https://github.com/purdue-aae490-iar/hw4-pid-tuning-Hicham-Belhseine/blob/master/media/cf_mass.jpg)
 
